@@ -10,7 +10,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Scripts -->
-        <script src="https://negosville.herokuapp.com/js/app.js" defer></script>
+        <script src="{{ asset('js/app.js') }}" defer></script>
 
 
         <!-- Fonts -->
@@ -19,8 +19,8 @@
 
         <!-- Styles -->
         <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
-        <link href="https://negosville.herokuapp.com/css/styles.css" rel="stylesheet">
-        <link href="https://negosville.herokuapp.com/css/forms.css" rel="stylesheet">
+        <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/forms.css') }}" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/9039d5884e.js" crossorigin="anonymous"></script>
     </head>
@@ -40,25 +40,28 @@
                         <a href="{{ url('/')}}">Inicio</a>
                     </li>
                     <li>
-                        <a href="location.html">Localidad</a>
+                        <a href="{{ route('location.index') }}">Localidad</a>
                     </li>
                     <li>
-                        <a href="help.html">Ayuda</a>
+                        <a href="{{ route('help.index') }}">Ayuda</a>
                     </li>
                     @guest
                     
                         <li>
-                            <a href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
+                            <a href="{{ route('login') }}">{{ __('Login') }}</a>
                         </li>
                         @if (Route::has('register'))
                         <li>
-                            <a href="{{ route('register') }}">{{ __('Registrarse') }}</a>
+                            <a href="{{ route('register') }}">{{ __('Register') }}</a>
                         </li>
                     </ul>
                     @endif
                     @else
+                    <li>
+                        <a href="{{ route('card.create') }}">Publicar</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="{{ route('perfil') }}">
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
                     </li>
@@ -67,7 +70,7 @@
                             <a  href="{{ route('logout') }}"
                                onclick="event.preventDefault();
     document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
+                                {{ __('Salir') }}
                             </a>
 
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

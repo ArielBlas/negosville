@@ -53,14 +53,19 @@
 
 .line i{
     font-size: 20px;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 10px;
     padding: 0px 12px;
+    z-index: 1;
+}
+
+label{
+    position: absolute;
 }
 
 .fa-calendar-alt{
-    padding-top: 2px !important;
+    padding-top: 10px !important;
 }
 
 form{
@@ -70,10 +75,13 @@ form{
 
 input[type="text"],
 input[type="date"],
+input[type="file"],
 input[type="email"],
-input[type="password"]{
+input[type="password"],
+textarea{
     display: block;
     padding: 10px 10px 10px 10px ;
+    background: #fff;
     padding-left: 40px;
     border-radius: 5px;
     border: none;
@@ -85,8 +93,10 @@ input[type="password"]{
 
 input[type="text"]:focus,
 input[type="date"]:focus,
+input[type="file"]:focus,
 input[type="email"]:focus,
-input[type="password"]:focus{
+input[type="password"]:focus,
+textarea:focus{
     outline:none !important;
     outline-offset: 0;
     
@@ -122,14 +132,15 @@ input[type="password"]:focus{
 input[type="submit"]{
     margin: 10px auto;
     margin-top: 30px;
+    margin-bottom: 25px;
     padding: 10px;
+    cursor: pointer;
     width: 100%;
     background-color: #ffc403;
     color: black;
     border-radius: 5px;
     font-size: 22px;
     border: 0;
-    cursor: pointer;
 }  
 
 .sign_up{

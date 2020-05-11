@@ -242,3 +242,71 @@ footer div{
     font-size: 14px;
 }
 
+/* CARD */
+
+.card_center{
+    margin: 5% auto;
+    border: 1px solid #ccc;
+    
+    overflow: hidden;
+}
+
+.main_image img{
+    display: block;
+    width: 50%;
+    float: left;
+    hidden: overflow;
+}
+
+.card_description{
+    float: left;
+    width: 40%;
+}
+
+.card_text{
+    height: 160px;
+}
+
+.card_description p{
+    padding: 5px 50px 5px 50px;
+}
+
+/* PERFIL */
+
+.perfil{
+    padding: 10% 20%;
+}
+
+.perfil img{
+    width: 200px;
+    height: 200px;
+    border-radius: 900px;
+    overflow: hidden;
+    float: left;
+}
+
+.perfil_description{
+    margin: 10px 50px;
+    float: left;
+}
+
+.perfil_description h3{
+    font-size: 30px;
+}
+
+.config{
+    float: left;
+    text-decoration: none;
+    color: #ffc403;
+    background: #1f1f1f;
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 38px;
+}
+
+/* Avatar */
+form .avatar{
+    display: block;
+    
+    width: 100px
+}

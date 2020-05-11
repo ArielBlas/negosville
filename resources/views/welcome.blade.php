@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Negosville</title>
-    <link href="https://negosville.herokuapp.com/css/styles.css" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/9039d5884e.js" crossorigin="anonymous"></script>
 </head>
@@ -27,45 +27,17 @@
     <section>
         <h2>Los lugares mas visitados</h2>
         <article>
+            @foreach($images as $image)
             <div class="carta">
-                <a href="#">
-                    <img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/08/20190801114610_kiosco.jpg">
-                    <h3>Kiosco Adrian</h3>
-                    <p>Categoria: <span>Kiosco</span></p>
-                    <p>Es un kiosco con buenas promos a un costo muy bajo...</p>
-                    <p>Estrellas: <span>4 de 5</span></p>
+                <a href="{{ route('card.index', ['id' => $image->id]) }}">
+                    <img src="{{ route('card.image', ['filename' => $image->image_path]) }}">
+                    <h3>{{$image->title}}</h3>
+                    <p>Categoria: <span>{{$image->category}}</span></p>
+                    <p>{{$image->description}}</p>
                 </a>
             </div>
 
-            <div class="carta">
-                <a href="#">
-                    <img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/08/20190801114610_kiosco.jpg">
-                    <h3>Kiosco Adrian</h3>
-                    <p>Categoria: <span>Kiosco</span></p>
-                    <p>Es un kiosco con buenas promos a un costo muy bajo...</p>
-                    <p>Estrellas: <span>4 de 5</span></p>
-                </a>
-            </div>
-
-            <div class="carta">
-                <a href="#">
-                    <img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/08/20190801114610_kiosco.jpg">
-                    <h3>Kiosco Adrian</h3>
-                    <p>Categoria: <span>Kiosco</span></p>
-                    <p>Es un kiosco con buenas promos a un costo muy bajo...</p>
-                    <p>Estrellas: <span>4 de 5</span></p>
-                </a>
-            </div>
-
-            <div class="carta">
-                <a href="#">
-                    <img src="https://infocielo.com/uploads/noticias/imagenes/a/2019/08/20190801114610_kiosco.jpg">
-                    <h3>Kiosco Adrian</h3>
-                    <p>Categoria: <span>Kiosco</span></p>
-                    <p>Es un kiosco con buenas promos a un costo muy bajo...</p>
-                    <p>Estrellas: <span>4 de 5</span></p>
-                </a>
-            </div>
+            @endforeach
 
         </article>
         
