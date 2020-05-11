@@ -10,7 +10,7 @@
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="https://negosville.herokuapp.com/js/app.js" defer></script>
 
 
         <!-- Fonts -->
@@ -19,8 +19,8 @@
 
         <!-- Styles -->
         <!--<link href="{{ asset('css/app.css') }}" rel="stylesheet">-->
-        <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/forms.css') }}" rel="stylesheet">
+        <link href="https://negosville.herokuapp.com/css/styles.css" rel="stylesheet">
+        <link href="https://negosville.herokuapp.com/css/forms.css" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/9039d5884e.js" crossorigin="anonymous"></script>
     </head>
