@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Negosville</title>
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+    <link href="https://negosville.herokuapp.com/css/styles.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/9039d5884e.js" crossorigin="anonymous"></script>
 </head>
