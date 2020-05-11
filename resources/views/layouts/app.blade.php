@@ -48,11 +48,11 @@
                     @guest
                     
                         <li>
-                            <a href="{{ route('login') }}">{{ __('Login') }}</a>
+                            <a href="{{ route('login') }}">{{ __('Iniciar Sesión') }}</a>
                         </li>
                         @if (Route::has('register'))
                         <li>
-                            <a href="{{ route('register') }}">{{ __('Register') }}</a>
+                            <a href="{{ route('register') }}">{{ __('Registrarse') }}</a>
                         </li>
                     </ul>
                     @endif
