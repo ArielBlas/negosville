@@ -123,6 +123,7 @@ input[type="submit"]{
     border-radius: 5px;
     font-size: 22px;
     border: 0;
+    cursor: pointer;
 }  
 
 .sign_up{
