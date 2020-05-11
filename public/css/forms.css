@@ -1,0 +1,147 @@
+/* Forms */
+.form{
+    background-color: #1f1f1f;
+    display: block;
+    margin: 80px auto;
+    width: 50%;
+    border: 1px solid white;   
+    border-radius: 10px;
+}
+
+.main{
+    display: block;
+    margin: 0px auto;    
+    width: 70%;
+    padding: 50px 0px 0px 0px;
+}
+
+.main img{
+    display: block;
+    margin: 0px auto;
+    width: 35%;
+    padding-bottom: 5%;
+}
+
+.main h1{
+
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+}
+
+.main h2{
+    text-align: center;
+    color: #ffc403;
+    padding-bottom: 4%;
+    font-size: 26px;
+}
+
+.main p{
+    color: #9a9494;
+    text-align: center;
+}
+
+.line{
+    position: relative;
+}
+
+.line i{
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    padding: 0px 12px;
+}
+
+.fa-calendar-alt{
+    padding-top: 2px !important;
+}
+
+form{
+    margin: 0px auto;
+    width: 70%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"]{
+    display: block;
+    padding: 10px 10px 10px 10px ;
+    padding-left: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    margin: 0px auto;
+    margin: 10px 0px 10px 0px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus{
+    outline:none !important;
+    outline-offset: 0;
+    
+}
+
+.helpers{
+    margin: 14px 0px 0px 0px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.helpers input[type="checkbox"]{
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin:0;
+    position: relative;
+    top: 2px;
+    overflow: hidden;
+}
+
+.helpers label{
+    padding: 0px;
+    font-size: 15px;
+}
+
+.helpers a{
+    float: right;
+    font-size: 15px;
+    color: #ffc403;
+}
+
+input[type="submit"]{
+    margin: 10px auto;
+    margin-top: 30px;
+    padding: 10px;
+    width: 100%;
+    background-color: #ffc403;
+    color: black;
+    border-radius: 5px;
+    font-size: 22px;
+    border: 0;
+}  
+
+.sign_up{
+    margin: 0px auto;
+    width: 70%;
+    margin-top: 20px;
+    font-size: 15px;
+    display: block;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+.sign_up p{
+    display: inline;
+    margin: 0;
+}
+
+.sign_up a{
+    color: #ffc403;
+    float: right;
+}
+
