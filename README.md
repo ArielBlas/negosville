@@ -2,7 +2,7 @@
 
 Negosville es una página web donde podes publicar tu negocio y ver los otros con solo registrarte. Además de ver la descripción del negocio y muchas más cosas a futuro. 
 
-*[Negosville](http://negosville.herokuapp.com/) - Página web
+* [Negosville](http://negosville.herokuapp.com/) - Página web
 
 ## Tomar en cuenta
 
