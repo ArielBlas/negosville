@@ -1,4 +1,4 @@
-# Negosiville
+# Negosville
 
 Negosville es una página web donde podes publicar tu negocio y ver los otros con solo registrarte. Además de ver la descripción del negocio y muchas más cosas a futuro. 
 
